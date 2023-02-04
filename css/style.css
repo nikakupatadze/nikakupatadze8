@@ -1,0 +1,118 @@
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  box-shadow: 10px 15px 20px red ;
+  transition: 2s;
+ margin-left: 50px;
+ margin-top: 50px;
+  transform: scale(2s);
+  cursor: pointer;
+}  
+.box:hover{
+    width: 400px;
+    box-shadow: 3px 3px 8px red;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-top: 100px;
+    margin-left: 50px;
+    animation: change 4s infinite;
+    cursor: pointer;
+}
+@keyframes change{
+    from{
+      opacity: 10;
+    }
+    to {
+      opacity: .3;
+    }
+}
+.text{
+    color: chocolate;
+    margin-top: 100px;
+    margin-left: 50px;animation: change1 7s infinite;
+    cursor: pointer;
+}
+@keyframes change1{
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 8px
+    }
+}
+header{
+  margin-top: 100px;
+  width: 700px;
+ padding: 80px 80px 80px 80px;
+  margin-left: 500px;
+  background-color: aqua;
+  box-shadow: inset 10px 15px  20px red;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li:hover{
+    border-bottom: 5px solid red;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.box3{
+    margin-top: 100px;
+    margin-left: 50px; 
+}
+.img{
+    animation: change2 3s infinite;
+    cursor: pointer;
+}
+@keyframes change2{
+    from {
+       
+    }
+    to {
+        border-radius:50% ;
+    }
+}
+.box4{
+    width: 700px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-left: 500px;
+    position: relative;
+    
+}
+.box5{
+    width: 100%;
+    height: 100%;
+    animation: change4 6s infinite;
+    border-radius: 30px;
+}
+@keyframes change4{
+    from {
+        width: 0%;
+        opacity: 0;
+     background-color: red;
+    }
+    to{
+        width: 100%;
+        background-color: red;
+    }
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
